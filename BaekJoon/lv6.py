@@ -1,6 +1,3 @@
-from logging.config import stopListening
-
-
 def Q25083():
     print('Q25083')
     print('         ,r\'\"7')
