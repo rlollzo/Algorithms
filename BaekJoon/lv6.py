@@ -109,41 +109,41 @@ def Q1316():
 
 def Q25206():
     print('Q25206')
-count, total = 0,0
-total_score = 0
-for i in range(19):
-    data = input().split()
-    score = float(data[1])
-    rating = data[2]
-    if rating == 'A+':
-        total += score * 4.5
-        total_score += score
-    elif rating == 'A0':
-        total += score * 4.0
-        total_score += score
-    elif rating == 'B+':
-        total += score * 3.5
-        total_score += score
-    elif rating == 'B0':
-        total += score * 3.0
-        total_score += score
-    elif rating == 'C+':
-        total += score * 2.5
-        total_score += score
-    elif rating == 'C0':
-        total += score * 2.0
-        total_score += score
-    elif rating == 'D+':
-        total += score * 1.5
-        total_score += score
-    elif rating == 'D0':
-        total += score * 1.0
-        total_score += score
-    elif rating == 'F':
-        total_score += score
-if total != 0:
-    print(round(total/total_score,6))
-else:
-    print("0.000000")
+    count, total = 0,0
+    total_score = 0
+    for i in range(19):
+        data = input().split()
+        score = float(data[1])
+        rating = data[2]
+        if rating == 'A+':
+            total += score * 4.5
+            total_score += score
+        elif rating == 'A0':
+            total += score * 4.0
+            total_score += score
+        elif rating == 'B+':
+            total += score * 3.5
+            total_score += score
+        elif rating == 'B0':
+            total += score * 3.0
+            total_score += score
+        elif rating == 'C+':
+            total += score * 2.5
+            total_score += score
+        elif rating == 'C0':
+            total += score * 2.0
+            total_score += score
+        elif rating == 'D+':
+            total += score * 1.5
+            total_score += score
+        elif rating == 'D0':
+            total += score * 1.0
+            total_score += score
+        elif rating == 'F':
+            total_score += score
+    if total != 0:
+        print(round(total/total_score,6))
+    else:
+        print("0.000000")
 
 Q25206()
