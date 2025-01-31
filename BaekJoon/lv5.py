@@ -81,6 +81,8 @@ def Q2675():
         paragraphs = ''
         num, word = input().split()
         num = int(num)
+        if num > 100 or len(word) > 100:
+            exit()
         for s in word:
             paragraphs += s*num
         result.append(paragraphs)
@@ -115,4 +117,5 @@ def Q5562():
         elif s == 'W'or s=='X'or s== 'Y'or s=='Z' :
             time += 9 + 1
     print(time)
+
 Q5562()
